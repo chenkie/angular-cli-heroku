@@ -1,0 +1,21 @@
+<div class="jumbotron">
+  <div class="text-center">
+    <img src="/assets/img/logo-color-long.png" alt="">
+    <h2>Angular CLI Heroku Deployment Demo</h2>
+    <button class="btn btn-primary" routerLink="/subroute">Go To Another Route</button>
+    <hr>
+    <h3>To deploy an Angular 2 app with the Angular CLI to Heroku:</h3>
+  </div>
+  <div class="col-sm-6 col-sm-offset-3 instructions">
+    <ul>
+      <li>Create a Heroku account</li>
+      <li>Install the Heroku CLI</li>
+      <li>Create a Heroku app in your project directory with <code>heroku create</code></li>
+      <li>Move <code>@angular/compiler-cli</code> and <code>angular-cli</code> from <code>devDependencies</code> to <code>dependencies</code> in your <code>package.json</code></li>
+      <li>Create a <code>postinstall</code> <code>script</code> in your <code>package.json</code> which builds your project to a <code>dist</code> directory on your server: <code>ng build --aot -prod</code></li>
+      <li>Install express: <code>npm install express --save</code></li>
+      <li>Create a <code>server.js</code> file in the root of your project and add code to serve the static files in your <code>dist</code> directory</li>
+      <li>Commit your work and push it to Heroku to deploy: <code>git push heroku master</code></li>
+    </ul>
+  </div>
+</div>

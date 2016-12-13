@@ -1,0 +1,11 @@
+.jumbotron {
+  margin-top: 20px;
+}
+
+.jumbotron hr {
+  border-color: #999;
+}
+
+.instructions {
+  float: none;
+}

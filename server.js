@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const compression = require('compression');
 const app = express();
 
 // If an incoming request uses
@@ -19,6 +20,9 @@ const forceSSL = function() {
 // to use the forceSSL
 // middleware
 app.use(forceSSL());
+
+// Gzip the response
+app.use(comporession());
 
 // Run the app by serving the static files
 // in the dist directory

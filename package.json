@@ -22,7 +22,6 @@
     "@angular/platform-browser": "2.2.3",
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/router": "3.2.3",
-    "angular-cli": "1.0.0-beta.22-1",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "express": "^4.14.0",
@@ -31,6 +30,7 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
+    "angular-cli": "1.0.0-beta.22-1",
     "@angular/compiler-cli": "2.2.3",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",

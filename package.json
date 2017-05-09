@@ -16,6 +16,7 @@
   "dependencies": {
     "@angular/common": "2.2.3",
     "@angular/compiler": "2.2.3",
+    "@angular/compiler-cli": "2.2.3",
     "@angular/core": "2.2.3",
     "@angular/forms": "2.2.3",
     "@angular/http": "2.2.3",
@@ -32,7 +33,6 @@
     "zone.js": "^0.6.23"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "2.2.3",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "codelyzer": "~2.0.0-beta.1",

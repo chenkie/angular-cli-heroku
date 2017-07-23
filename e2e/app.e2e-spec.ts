@@ -1,14 +1,14 @@
-import { AngularHerokuPage } from './app.po';
+import { AngularCliHerokuPage } from './app.po';
 
-describe('angular-heroku App', function() {
-  let page: AngularHerokuPage;
+describe('angular-cli-heroku App', () => {
+  let page: AngularCliHerokuPage;
 
   beforeEach(() => {
-    page = new AngularHerokuPage();
+    page = new AngularCliHerokuPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

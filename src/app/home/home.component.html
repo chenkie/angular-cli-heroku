@@ -1,21 +1,195 @@
-<div class="jumbotron">
-  <div class="text-center">
-    <img src="/assets/img/logo-color-long.png" alt="" class="img-responsive">
-    <h2>Angular CLI Heroku Deployment Demo</h2>
-    <button class="btn btn-primary" routerLink="/subroute">Go To Another Route</button>
-    <hr>
-    <h3>To deploy an Angular 2 app with the Angular CLI to Heroku:</h3>
-  </div>
-  <div class="col-sm-6 col-sm-offset-3 instructions">
-    <ul>
-      <li>FUck that bitch</li>
-      <li>Install the Heroku CLI</li>
-      <li>Create a Heroku app in your project directory with <code>heroku create</code></li>
-      <li>Move the <code>angular-cli</code> dependency from <code>devDependencies</code> to <code>dependencies</code> in your <code>package.json</code></li>
-      <li>Create a <code>postinstall</code> <code>script</code> in your <code>package.json</code> which builds your project to a <code>dist</code> directory on your server: <code>ng build --aot -prod</code></li>
-      <li>Install express: <code>npm install express --save</code></li>
-      <li>Create a <code>server.js</code> file in the root of your project and add code to serve the static files in your <code>dist</code> directory</li>
-      <li>Commit your work and push it to Heroku to deploy: <code>git push heroku master</code></li>
-    </ul>
-  </div>
-</div>
+<!--<div class="jumbotron">-->
+  <!--<div class="text-center">-->
+    <!--<img src="/assets/img/logo-color-long.png" alt="" class="img-responsive">-->
+    <!--<h2>Angular CLI Heroku Deployment Demo</h2>-->
+    <!--<button class="btn btn-primary" routerLink="/subroute">Go To Another Route</button>-->
+    <!--<hr>-->
+    <!--<h3>To deploy an Angular 2 app with the Angular CLI to Heroku:</h3>-->
+  <!--</div>-->
+  <!--<div class="col-sm-6 col-sm-offset-3 instructions">-->
+    <!--<ul>-->
+      <!--<li>FUck that bitch</li>-->
+      <!--<li>Install the Heroku CLI</li>-->
+      <!--<li>Create a Heroku app in your project directory with <code>heroku create</code></li>-->
+      <!--<li>Move the <code>angular-cli</code> dependency from <code>devDependencies</code> to <code>dependencies</code> in your <code>package.json</code></li>-->
+      <!--<li>Create a <code>postinstall</code> <code>script</code> in your <code>package.json</code> which builds your project to a <code>dist</code> directory on your server: <code>ng build &#45;&#45;aot -prod</code></li>-->
+      <!--<li>Install express: <code>npm install express &#45;&#45;save</code></li>-->
+      <!--<li>Create a <code>server.js</code> file in the root of your project and add code to serve the static files in your <code>dist</code> directory</li>-->
+      <!--<li>Commit your work and push it to Heroku to deploy: <code>git push heroku master</code></li>-->
+    <!--</ul>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+
+
+<!-- New Design -->
+
+<aside>
+  <section>
+    <h2>
+      {{title}}
+    </h2>
+    <p>
+      {{socialFlare}}
+      <a href="https://twitter.com/asurascouter">{{socialNetwork1}}</a>,
+      <a href="https://www.linkedin.com/in/cksamuel/">{{socialNetwork2}}</a>,
+      <a href="https://github.com/Alayode">{{socialNetwork3}}</a>,
+      {{AltSocialBlurb}} <a href="mailto:chris@kayode.me">{{emailAddress}}</a>.
+    </p>
+  </section>
+</aside>
+<main>
+  <ul class="menu">
+    <li><a href="/">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+  </ul>
+
+  <div class="category-title tutorials">Tutorials</div>
+
+  <ol class="posts">
+
+    <li><a class="title">Coming Soon.</a></li>
+    <!--<a class="title" href="/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/">Create a character voting app using React, Node.js, MongoDB and Socket.IO</a>-->
+    <!--<div class="excerpt">In this tutorial we are going to build a character voting app (inspired by Facemash) for EVE Online - a massively multiplayer online game. You will learn how to build a REST API with <strong>Node.js</strong>, save and retrieve data from <strong>MongoDB</strong>, track online visitors in real-time using <strong>Socket.IO</strong>, build a single-page app experience using <strong>React</strong> + <strong>Flux</strong> with server-side rendering and then finally deploy it to the cloud.</div>-->
+    <!--<span class="date">July 21, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/build-an-instagram-clone-using-angularjs-satellizer-nodejs-and-mongodb/">Build an Instagram clone with AngularJS, Satellizer, Node.js and MongoDB</a>-->
+    <!--<div class="excerpt">This tutorial will show you how to build a simple Instagram clone using Satellizer for user authentication.</div>-->
+    <!--<span class="date">January 25, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/">Create a TV Show Tracker using AngularJS, Node.js and MongoDB</a>-->
+    <!--<div class="excerpt">This tutorial will show you how to build a REST API with Express, authentication and signup process with Passport, create and retrieve data from MongoDB using Mongoose. The front-end will be built using AngularJS and Bootstrap Sass. The last step involves using gulp.js to optimize your static assets.</div>-->
+    <!--<span class="date">June 05, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/how-to-implement-password-reset-in-nodejs/">How To Implement Password Reset In Node.js</a>-->
+    <!--<div class="excerpt">In this tutorial, we'll go over how to create a forgot your password feature using Express, MongoDB, Passport and Nodemailer. We will build a complete application from scratch. This guide assumes as little possible, and thus covers some basic stuff along the way.</div>-->
+    <!--<span class="date">February 26, 2014</span>-->
+    <!--</li>-->
+
+  </ol>
+
+  <ol class="posts">
+    <div class="category-title personal">Personal</div>
+    <li><a class="title">Coming Soon.</a></li>
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-6/">Cross-Country Road Trip in a Tesla Model S: Day 6</a>-->
+    <!--<div class="excerpt">Day 6 — New Philadelphia, Ohio to New York / New Jersey.</div>-->
+    <!--<span class="date">October 06, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-5/">Cross-Country Road Trip in a Tesla Model S: Day 5</a>-->
+    <!--<div class="excerpt">Day 5 — New Philadelphia, Ohio.</div>-->
+    <!--<span class="date">October 05, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-4/">Cross-Country Road Trip in a Tesla Model S: Day 4</a>-->
+    <!--<div class="excerpt">Day 4 — Kansas City to New Philadelphia, Ohio.</div>-->
+    <!--<span class="date">October 04, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-3/">Cross-Country Road Trip in a Tesla Model S: Day 3</a>-->
+    <!--<div class="excerpt">Day 3 — Denver to Kansas City.</div>-->
+    <!--<span class="date">October 03, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-2/">Cross-Country Road Trip in a Tesla Model S: Day 2</a>-->
+    <!--<div class="excerpt">Day 2 — Las Vegas to Denver, Colorado.</div>-->
+    <!--<span class="date">October 02, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-day-1/">Cross-Country Road Trip in a Tesla Model S: Day 1</a>-->
+    <!--<div class="excerpt">Day 1 — Los Angeles to Las Vegas.</div>-->
+    <!--<span class="date">October 01, 2015</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/cross-country-road-trip-in-tesla-model-s-prologue/">Cross-Country Road Trip in a Tesla Model S: Prologue</a>-->
+    <!--<div class="excerpt">I am about to embark on a 2,800-mile road trip from Los Angeles to New York using an electric car.</div>-->
+    <!--<span class="date">September 30, 2015</span>-->
+    <!--</li>-->
+
+  </ol>
+
+  <ol class="posts">
+    <div class="category-title recurse-center">Extracurricular Activities</div>
+    <li><a class="title">Coming Soon.</a></li>
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-11-and-12/">Hacker School: Week 11 and 12 (Final)</a>-->
+    <!--<div class="excerpt">End of Hacker School and start of Yahoo! adventures.</div>-->
+    <!--<span class="date">August 28, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-10/">Hacker School: Week 10</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 10.</div>-->
+    <!--<span class="date">August 18, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-9/">Hacker School: Week 9</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 9.</div>-->
+    <!--<span class="date">August 11, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-8/">Hacker School: Week 8</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 8.</div>-->
+    <!--<span class="date">August 04, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-6-and-7/">Hacker School: Week 6 and 7</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 6 and Week 7.</div>-->
+    <!--<span class="date">July 28, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-5/">Hacker School: Week 5</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 5.</div>-->
+    <!--<span class="date">July 14, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-4/">Hacker School: Week 4</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 4.</div>-->
+    <!--<span class="date">July 07, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-3/">Hacker School: Week 3</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 3.</div>-->
+    <!--<span class="date">June 29, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-2/">Hacker School: Week 2</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 2.</div>-->
+    <!--<span class="date">June 22, 2014</span>-->
+    <!--</li>-->
+
+    <!--<li>-->
+    <!--<a class="title" href="/hacker-school-week-1/">Hacker School: Week 1</a>-->
+    <!--<div class="excerpt">A blog post about my NYC Hacker School experience &#45;&#45; Week 1.</div>-->
+    <!--<span class="date">June 15, 2014</span>-->
+    <!--</li>-->
+
+  </ol>
+
+  <footer>
+    © 2017 Chris Samuel
+    <!--Powered by <a href="http://jekyllrb.com">Jekyll</a> and <a href="https://pages.github.com">GitHub Pages</a>.-->
+  </footer>
+</main>
+

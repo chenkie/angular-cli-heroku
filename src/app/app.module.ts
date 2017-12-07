@@ -13,6 +13,7 @@ import { BlockchainsComponent } from './blockchains/blockchains.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MtgComponent } from './mtg/mtg.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
             declarations: [
@@ -22,7 +23,8 @@ import { MtgComponent } from './mtg/mtg.component';
               BlockchainsComponent,
               LandingComponent,
               ProjectsComponent,
-              MtgComponent
+              MtgComponent,
+              FooterComponent
             ],
             imports: [
               BrowserModule,

@@ -9,8 +9,10 @@
     "start": "node server.js",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
+    "heroku-prebuild": "rm -rf node_modules && npm cache verify",
     "postinstall": "ng build --aot -prod",
-    "deploy": "git push origin master && git push heroku master"
+    "build:prod": "ng build --aot -prod --verbose",
+    "deploy:prod": "git push origin master && git push heroku master"
   },
   "private": true,
   "dependencies": {
